@@ -1,0 +1,79 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 13px;
+    --font-label-clr: rgb(14, 14, 14);
+    --border-focus-clr: rgb(82, 155, 250);
+}
+
+.main-container {
+    display: flex;
+}
+
+.left-section {
+    background-color: red;
+    width: 20%;
+    height: 850px;
+}
+
+.right-section {
+    width: 100%;
+    background-color: rgb(240, 243, 245);
+}
+
+.right-section .container {
+    background-color: white;
+    box-shadow: 0px 10px 18px -20px;
+}
+
+.right-section .heading {
+    padding: 10rem 0 4rem 0;
+}
+
+.right-section .heading,
+form .input-container {
+    padding-left: 4rem;
+}
+
+
+form {
+    display: flex;
+    font-size: var(--main-font);
+    color: var(--font-label-clr);
+    font-weight: 700;
+    gap: 70px;
+    padding: 35px 0 35px 0;
+}
+
+form .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-container input {
+    border-radius: 3px;
+    height: 2rem;
+    width: 17rem;
+    border: solid 1px rgb(219, 219, 219);
+    padding-left: 10px;
+}
+
+.input-container input:focus {
+    outline: solid 2px var(--border-focus-clr);
+}
+
+.input label {
+    padding-bottom: 3px;
+}
+
+form .input {
+    display: flex;
+    flex-direction: column;
+}
+
