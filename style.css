@@ -7,8 +7,21 @@
 
 :root {
     --main-font: 13px;
+    --p-title-font-size: 22px;
+    --p-title-font-weight: 600;
     --font-label-clr: rgb(14, 14, 14);
     --border-focus-clr: rgb(82, 155, 250);
+    --right-section-gap: 4rem;
+}
+
+p,
+h1 {
+    font-size: var(--p-title-font-size);
+    font-weight: var(--p-title-font-weight);
+}
+
+p {
+    width: 43rem;
 }
 
 .main-container {
@@ -17,13 +30,12 @@
 
 .left-section {
     background-color: red;
-    width: 20%;
-    height: 850px;
+    width: 30%;
 }
 
 .right-section {
-    width: 100%;
     background-color: rgb(240, 243, 245);
+    width: 100%;
 }
 
 .right-section .container {
@@ -37,7 +49,7 @@
 
 .right-section .heading,
 form .input-container {
-    padding-left: 4rem;
+    padding-left: var(--right-section-gap);
 }
 
 
@@ -59,7 +71,7 @@ form .input-container {
 .input-container input {
     border-radius: 3px;
     height: 2rem;
-    width: 17rem;
+    width: min(16rem, 180%);
     border: solid 1px rgb(219, 219, 219);
     padding-left: 10px;
 }
@@ -70,10 +82,27 @@ form .input-container {
 
 .input label {
     padding-bottom: 3px;
+    min-width: 10rem;
 }
 
 form .input {
     display: flex;
     flex-direction: column;
+}
+
+.right-section .submit {
+    border: none;
+    border-radius: 5px;
+    width: 13rem;
+    height: 3rem;
+    background-color: rgb(34, 100, 34);
+    color: white;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: var(--right-section-gap);
+}
+
+.right {
+    padding-top: 3.1rem;
 }
 
