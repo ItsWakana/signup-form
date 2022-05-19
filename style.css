@@ -10,7 +10,7 @@
     --p-title-font-size: 22px;
     --p-title-font-weight: 600;
     --font-label-clr: rgb(20, 22, 29);
-    --border-focus-clr: rgb(82, 155, 250);
+    --border-focus-clr: rgb(67, 128, 179);
     --right-section-gap: 4rem;
 
 /* form colours */
@@ -38,9 +38,9 @@ h3 {
     display: flex;
 }
 
-.left-section {
+#charimon {
     background-color: var(--left-section-bg);
-    width: 30%;
+    height: 53.2rem;
 }
 
 .right-section {
@@ -110,6 +110,10 @@ form .input {
     font-weight: 600;
 }
 
+.right-section .submit:hover {
+    cursor: pointer;
+}
+
 span.log-in {
     color: var(--button-log-in);
 }
@@ -130,6 +134,11 @@ span.log-in {
 .account > p {
     margin-bottom: 2rem;
 }
+
+.account span:hover {
+    cursor: pointer;
+}
+
 
 
 
