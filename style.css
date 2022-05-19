@@ -31,7 +31,7 @@ h4 {
 h1,
 h2,
 h3 {
-    width: 43rem;
+    max-width: 43rem;
 }
 
 .main-container {
@@ -40,7 +40,8 @@ h3 {
 
 #charimon {
     background-color: var(--left-section-bg);
-    height: 53.2rem;
+    /* max-height: 53.2rem; */
+    width: 40%;
     border-left: solid 50px var(--border-focus-clr);
     border-right: solid 2px var(--border-focus-clr);
 }
@@ -94,7 +95,6 @@ form .input-container {
 
 .input label {
     padding-bottom: 3px;
-    min-width: 10rem;
 }
 
 form .input {
@@ -110,9 +110,11 @@ form .input {
     background-color: var(--button-log-in);
     color: white;
     font-weight: 600;
+    transition: 100ms;
 }
 
 .right-section .submit:hover {
+    background-color: black;
     cursor: pointer;
 }
 
@@ -121,9 +123,9 @@ span.log-in {
 }
 
 
-.right {
+/* .right {
     padding-top: 3.1rem;
-}
+} */
 
 .right-section .account {
     display: flex;
@@ -139,6 +141,21 @@ span.log-in {
 
 .account span:hover {
     cursor: pointer;
+}
+
+@media all and (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    #charimon {
+        display: none;
+    }
+
+    .heading h1 {
+        border-top: solid 10px var(--border-focus-clr);
+    }
+    
 }
 
 
