@@ -14,13 +14,17 @@
     --right-section-gap: 4rem;
 }
 
-p,
-h1 {
+h1,
+h2,
+h3,
+h4 {
     font-size: var(--p-title-font-size);
     font-weight: var(--p-title-font-weight);
 }
 
-p {
+h1,
+h2,
+h3 {
     width: 43rem;
 }
 
@@ -59,7 +63,7 @@ form {
     color: var(--font-label-clr);
     font-weight: 700;
     gap: 70px;
-    padding: 65px 0 65px 0;
+    padding: 30px 0 60px 0;
 }
 
 form .input-container {
@@ -98,11 +102,23 @@ form .input {
     background-color: rgb(34, 100, 34);
     color: white;
     font-weight: 600;
-    margin-top: 2rem;
-    margin-left: var(--right-section-gap);
 }
 
 .right {
     padding-top: 3.1rem;
 }
+
+.right-section .account {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: var(--right-section-gap);
+    margin-top: 3rem;
+}
+
+.account > p {
+    margin-bottom: 2rem;
+}
+
+
 
